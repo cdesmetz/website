@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <title>Introduction à Git</title>
+</head>
+<body>
+    <div class="container">
+        <br>
+        <ul class="nav nav-tabs">
+            <li class="active"><a href="#">Git</a></li>
+        </ul>
+        <div class="row">
+            <dl class="dl-horizontal">
+                <dt>Site officiel</dt>
+                <dd><a href="http://git-scm.com/book/fr/D%C3%A9marrage-rapide-Param%C3%A9trage-%C3%A0-la-premi%C3%A8re-utilisation-de-Git">Démarrage rapide</a></dd>
+                <dt>Documentation</dt>
+                <dd><a href="http://git-scm.com/book/fr">Manuel en ligne</a></dd>
+            </dl>
+            <h3>Les commandes de bases</h3>
+            <ul class="unstyled">
+                <li><i class="icon-wrench"></i> Pour vérifier les options de configuration <code>git config --list</code></li>
+                <li><i class="icon-wrench"></i> Pour initialiser un dépôt <code>git init</code></li>
+                <li><i class="icon-wrench"></i> Ignore des fichiers à indexer <code>gitignore</code></li>
+                <li><i class="icon-wrench"></i> Ajout des fichiers à indexer <code>git add $.c</code></li>
+                <li><i class="icon-wrench"></i> Commit les fichiers indexés <code>git commit -m 'Message d'information'</code></li>
+            </ul>
+            <h3>Les fichiers à ne pas indexer</h3>
+            <a href="http://maven.apache.org/guides/mini/guide-ide-eclipse.html">Les fichiers à ignorer</a>
+            <ul>
+                <li>target</li>
+                <li>.classpath</li>
+                <li>.project</li>
+                <li>.wtpmodules</li>
+            </ul>
+            <h3>Git les principes</h3>
+            Pour fonctionner, Git a besoin de 3 choses :
+            <ul>
+                <li>un répertoire de travail (le projet dans le workspace d'Eclipse par exemple),</li>
+                <li>un dépôt,</li>
+                <li>un index.</li>
+            </ul>
+            <br>
+            <address>
+                <strong>Cédric DESMETZ</strong><br>
+                <a href="mailto:#">cedric.desmetz@gmail.com</a>
+            </address>
+        </div>
+    </div>
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
