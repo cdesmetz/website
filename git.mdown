@@ -1,0 +1,29 @@
+# Qu'est ce qu'un commit ?
+Le "commit" est l'action de sauvegarder dans le dépôt (repository) les fichiers indexés. Cela permet de créér un instantanné du projet identifié par un "sha" et de décrire via un message de log les changements apportées.
+
+Schéma (Linux pratique n°83)
+
+
+Depuis la console, la commande "git commit --help" permet d'obtenir des informations supplémentaires sur les actions qui peuvent être effectué sur l'index et qui vont donc affecter le commit.
+
+La commande stocke les contenus actuels de l'index dans un nouvelle version du projet avec un message de log de l'utilisateur décrivant les changements. Le contenu à ajouter peut être spécifiée de plusieurs manières: 
+
+         1. en utilisant git add pour "ajouter" de façon incrémental les changements à l'index avant d'utiliser la commande commit; 
+
+         2. en utilisant git rm pour supprimer les fichiers de l'arborescence de travail et de l'index, à nouveau avant d'utiliser la commande commit; 
+
+         3. en listant les fichiers comme arguments à la commande commit, dans ce cas, la validation va ignorer les changements mis en scène dans l'index, et la place, enregistrer le contenu actuel des fichiers de la liste (qui doivent déjà être connu de Git); 
+
+         4. en utilisant le commutateur -a avec la commande commit pour ajouter automatiquement les changements de tous les fichiers déjà connus et de supprimer automatiquement les fichiers dans l'index qui ont été retiré de l'arbre via la commande rm; 
+
+         5. en utilisant les commutateurs --interactive ou --patch avec la commande afin de valider un par un les fichiers qui feront partie du commit.
+
+
+Référence http://git-scm.com/book/fr/
+
+# A quoi sert la commande git log ?
+La commande git log permet d'obtenir l'historique des commit qui ont été effectués sur l'ensemble du projet par ordre chronologique inverse, c'est à dire du plus récent au moins récent.
+Il permet de savoir qui (via l'adresse mail), pour quelle raison (via le message) et quand le commit est intervenu.
+
+# Qu'est ce qu'une branche ?
+Une branche s'obtient par la commande git branch NOM_DE_MA_BRANCHE
